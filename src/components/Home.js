@@ -71,9 +71,10 @@ const ShopButton = styled(Button)`
   margin: 20px 0;
 `
 const Text1 = styled.div`
-  font-size: 20px;
+  font-size: 24px;
   margin: 6px 0;
   font-weight: 600;
+  letter-spacing: 2px;
   /* text-transform: uppercase; */
 `
 const Text2 = styled.div`
@@ -84,6 +85,6 @@ letter-spacing: 4px;
 text-transform: uppercase;
 `
 const Text3 = styled.div`
-font-size: 14px;
-margin: 10px 0;
+font-size: 16px;
+margin: 18px 0 10px 0;
 `
