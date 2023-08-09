@@ -42,13 +42,15 @@ function Home() {
         <Box sx={{
           position: 'absolute',
           display: {xs: 'flex', md: 'none'},
-          bottom: 0,
+          // top: '20px',
+          top: 0,
           left: 0,
+          // maxHeight: '100%',
           marginLeft: '0px',
           zIndex: 3,
           alignItems: 'flex-start',
           flexDirection: 'column',
-          padding: '60px 35% 60px 60px'
+          padding: '20px 35% 20px 20px',
         }}>
           <Text3>Inexpensive filtration solutions for small scale producers</Text3>
           <ShopButton href='mailto:kevin@pressuredropfiltration.com' sx={{marginTop: '20px', padding: '12px 50px'}} variant="contained">Shop Now</ShopButton>
@@ -63,7 +65,7 @@ function Home() {
         zIndex: 3,
         alignItems: 'flex-start',
         flexDirection: 'column',
-        padding: '60px 20px 60px 60px'
+        padding: '20px'
       }}>
         <Text1>Volitile acidity & alcohol reduction</Text1>
         <Text2>Wine Filtration</Text2>
@@ -91,17 +93,17 @@ const Img = styled.img`
   left: 0;
   /* opacity: 0.7; */
 `
-const InnerContainer = styled.div`
-  /* position: 'absolute'; */
-  margin-left: 0px;
-  z-index: 3;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  /* background-color: rgba(255,255,255, 0.5); */
-  padding: 60px 20px 60px 60px;
-  border: 1px solid black;
-`
+// const InnerContainer = styled.div`
+//   /* position: 'absolute'; */
+//   margin-left: 0px;
+//   z-index: 3;
+//   display: flex;
+//   align-items: flex-start;
+//   flex-direction: column;
+//   /* background-color: rgba(255,255,255, 0.5); */
+//   padding: 60px 20px 60px 60px;
+//   border: 1px solid black;
+// `
 // const BottomContainer = styled.div`
 //   /* margin:120px 0 0 40px; */
 //   margin-left: 0px;
