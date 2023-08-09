@@ -22,12 +22,14 @@ function Home() {
 
   return (
     <HomeContainer>
-      <ImgContainer>
+      <Box sx={{display: {xs: 'relative', md: 'relative'}}}>
         <Img src={backgroundImg} className="background"/>
         <Box sx={{
           position: 'absolute',
           display: {xs: 'none', md: 'flex'},
           marginLeft: '0px',
+          top: '50%',
+          transform: 'translate(0, -50%)',
           zIndex: 3,
           alignItems: 'flex-start',
           flexDirection: 'column',
@@ -43,7 +45,8 @@ function Home() {
           position: 'absolute',
           display: {xs: 'flex', md: 'none'},
           // top: '20px',
-          top: 0,
+          top: '50%',
+          transform: 'translate(0, -100%)',
           left: 0,
           // maxHeight: '100%',
           marginLeft: '0px',
@@ -52,10 +55,10 @@ function Home() {
           flexDirection: 'column',
           padding: '20px 35% 20px 20px',
         }}>
-          <Text3>Inexpensive filtration solutions for small scale producers</Text3>
-          <ShopButton href='mailto:kevin@pressuredropfiltration.com' sx={{marginTop: '20px', padding: '12px 50px'}} variant="contained">Shop Now</ShopButton>
+          <Text3>Inexpensive filtration for small scale producers</Text3>
+          <ShopButton href='mailto:kevin@pressuredropfiltration.com' sx={{marginTop: '20px', padding: {sx: '12px 20px', md: '12px 50px'}}} variant="contained">Shop Now</ShopButton>
         </Box>
-      </ImgContainer>
+      </Box>
       
       <Box sx={{
         // position: {xs: 'relative', md: 'absolute'},
@@ -67,8 +70,8 @@ function Home() {
         flexDirection: 'column',
         padding: '20px'
       }}>
+        <Text2b>Wine Filtration</Text2b>
         <Text1>Volitile acidity & alcohol reduction</Text1>
-        <Text2>Wine Filtration</Text2>
       </Box>
     </HomeContainer>
   );
@@ -140,13 +143,13 @@ letter-spacing: 4px;
 text-transform: uppercase;
 text-align: left;
 `
+const Text2b = styled(Text2)`
+  font-size: 32px;
+  margin: 12px 0;
+`
 const Text3 = styled.div`
 font-size: 16px;
 margin: 12px 0 10px 0;
 font-weight: 200;
 text-align: left;
-`
-
-const ImgContainer = styled.div`
-  position: relative;
 `

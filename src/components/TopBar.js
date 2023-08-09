@@ -44,7 +44,7 @@ function TopBar() {
           noWrap
           component="div"
           sx={{
-            display: { xs: 'none', md: 'flex' },
+            display: 'flex',
             // fontFamily: 'monospace',
             fontWeight: 100,
             fontSize: '13px',
