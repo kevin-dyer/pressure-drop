@@ -38,7 +38,7 @@ function TopBar() {
 
   return (
     <AppBar position="static" color="inherit">
-      <Container disableGutters={true} maxWidth={false} sx={{display: { xs: 'none', md: 'flex' }, justifyContent: 'center', alignItems: 'center', backgroundColor: 'black', height: '30px', margin: 0, padding:0, }}>
+      <Container disableGutters={true} maxWidth={false} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'black', height: '30px', margin: 0, padding:0, }}>
         <Typography
           variant="body2"
           noWrap
@@ -71,7 +71,7 @@ function TopBar() {
               href="/"
               sx={{
                 mr: 2,
-                display: { xs: 'none', md: 'flex' },
+                // display: { xs: 'none', md: 'flex' },
                 // fontFamily: 'monospace',
                 fontWeight: 400,
                 // letterSpacing: '.3rem',
@@ -91,7 +91,7 @@ function TopBar() {
               href="/"
               sx={{
                 mr: 2,
-                display: { xs: 'none', md: 'flex' },
+                // display: { xs: 'none', md: 'flex' },
                 // fontFamily: 'monospace',
                 fontWeight: 200,
                 // letterSpacing: '.3rem',
@@ -108,7 +108,7 @@ function TopBar() {
             </Typography>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, justifyContent: 'flex-end' }}>
             <IconButton
               size="large"
               aria-label="account of current user"
