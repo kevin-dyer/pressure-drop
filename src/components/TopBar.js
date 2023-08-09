@@ -38,7 +38,7 @@ function TopBar() {
 
   return (
     <AppBar position="static" color="inherit">
-      <Container disableGutters={true} maxWidth={false} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'black', height: '30px', margin: 0, padding:0, }}>
+      <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'black', height: '30px'}}>
         <Typography
           variant="body2"
           noWrap
@@ -58,7 +58,7 @@ function TopBar() {
         >
           Free shipping on orders $50+
         </Typography>
-      </Container>
+      </Box>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
